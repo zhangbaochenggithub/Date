@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="日期-年-年月日.css">
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="日期-年-年月日.js"></script>
+    <title>日期-年-年月日</title>
+</head>
+<style>
+    body {
+        background: #fff;
+    }
+
+    input {
+        width: 160px;
+        height: 38px;
+        border: 1px solid #eee;
+        border-radius: 2px;
+        padding-left: 10px;
+        margin-right: 100px;
+    }
+</style>
+
+<body>
+    <input id="date_year" type="text" placeholder="年-月" class="dateplug" readonly onfocus='this.blur()' />
+    <input id="date" type="text" placeholder="年-月-日" class="dateplug" readonly onfocus='this.blur()' />
+</body>
+
+</html>
+<script>
+    $(function () {
+        $("#date_year").Date_YM();
+        $("#date").Date_YMD();
+    })
+</script>
